@@ -32,6 +32,7 @@ The following folders are used by the s2i builder process. We instruct the EAP b
 </pre>
 
 
+```
 oc new-app --template=eap74-basic-s2i -n lis7 --name=lis7app\
   -p EAP_IMAGE_NAME=jboss-eap74-openjdk8-openshift:7.4.0  \
   -p EAP_RUNTIME_IMAGE_NAME=jboss-eap74-openjdk8-runtime-openshift:7.4.0 \
@@ -40,7 +41,7 @@ oc new-app --template=eap74-basic-s2i -n lis7 --name=lis7app\
   -p CONTEXT_DIR=helloworld-html5 \
   --env-file extensions/datasources.env \
   -p ENABLE_GENERATE_DEFAULT_DATASOURCE=false
- 
+ ```
  
  
  
